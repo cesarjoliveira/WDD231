@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script href="scripts/scripts.js" defer=""></script>
+    <script src="scripts/scripts.js" defer></script>
     <meta name="description" content="Home page to WDD231 course">
     <meta name="author" content="Cesar Olivera">
 </head>
@@ -21,9 +21,10 @@
         <img src="images/profile.webp" height="120" alt="Cesar Oliveira">
         <h1>Cesar J. Oliveira</h1>
     </header>
-    <nav>
-        <ul>
-            <li><A href="index.html">Home</li></A>
+    <a id="menu" href="#"></a>
+    <nav id="navigation">
+        <ul >
+            <li><A href="index.html" class="active">Home</li></A>
             <li><a href="">Chamber</li></A>
             <li><a href="https://github.com/cesarjoliveira">Github Profile</li></A>
             <li><a href="https://www.linkedin.com/in/cesar-oliveira1993/">LinkedIn</li></A>
@@ -67,8 +68,8 @@
         </section>
     </main>
     <footer>
-        <p>©<span id="currentyear"></span> 🌤️ Cesar Jose de Oliveira 🌤️ Brazil </p>
-        <p> last update: <span id="lastModified"></span></p>
+        <p>©<span class="currentyear"></span> 🌤️ Cesar Jose de Oliveira 🌤️ Brazil </p>
+        <p> last update: <span class="lastModified"></span></p>
     </footer>
 </body>
 

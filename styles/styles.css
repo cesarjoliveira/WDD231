@@ -1,3 +1,38 @@
+@media screen and (min-width: 501px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .courses ul{
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+}
+
+@media screen and (max-width: 500px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .certificates, .coursework, .location{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .location :not(h2){
+        justify-items: center;
+    }
+    
+    .courses ul li{
+    min-width: 380px;
+    }
+
+    nav{
+        display: none;
+    }
+}
+    
 :root{
     background-color: hsla(313, 30%, 69%, 0.41);
     color: white;
@@ -71,11 +106,7 @@ h2 {
     padding: 10px;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-}
+
 section{
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(114, 49, 100, 0.589);
@@ -149,7 +180,7 @@ section{
     padding: 10px;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
     gap: 15px;
     justify-content: center;
 }
@@ -175,4 +206,32 @@ section{
 }
 footer {
     color: black;
+}
+
+.active::before {
+    content: "➡️";
+}
+
+.show li {
+	display: block;
+}
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #000;
+}
+#navigation.show{
+    display: block;
 }
