@@ -1,3 +1,6 @@
+:root{
+    background-color: hsla(313, 30%, 69%, 0.41);
+}
 .lato-regular {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -17,13 +20,44 @@
     font-style: normal; /* Corrigido de 'bold' para 'normal' */
     font-variation-settings: "wdth" 100; /* Verifique se "Roboto" suporta variações */
 }
-
-h2 {
+nav ul {
+    background-color: hsla(312, 100%, 2%, 0.41);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+nav li{
+    margin: 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    font-size: 1.5em;
     font-family: sans-serif;
+    transition: background-color 0.3s ease; 
 }
 
-h2:hover {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 10px;
-    color: brown;
+nav a:hover{
+    background-color: hsla(312, 100%, 2%, 0.41);
+    color: hsla(312, 100%, 2%, 0.41);
+}
+
+header{
+    background-color: hsla(246, 84%, 47%, 0.41);
+    justify-content: center;
+    display: flex;
+}
+header h1{
+    margin: 0;
+}
+h2 {
+    font-family: sans-serif;
+    background-color: hsla(246, 84%, 47%, 0.41);
 }
