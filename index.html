@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,17 @@
     <link href="styles/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script href="scripts/scripts.js" defer=""></script> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script href="scripts/scripts.js" defer=""></script>
     <meta name="description" content="Home page to WDD231 course">
     <meta name="author" content="Cesar Olivera">
 </head>
+
 <body>
     <header>
-        <img href="images/profile.webp" alt="Cesar Oliveira">
+        <img src="images/profile.webp" height="120" alt="Cesar Oliveira">
         <h1>Cesar J. Oliveira</h1>
     </header>
     <nav>
@@ -26,7 +30,7 @@
         </ul>
     </nav>
     <main>
-        <section>
+        <section class="coursework">
             <h2>Course Work</h2>
             <ul>
                 <li></li>
@@ -34,34 +38,38 @@
                 <li></li>
             </ul>
         </section>
-        <section>
+        <section class="location">
             <h2>Espirito Santo, Brazil</h2>
             <figure>
-            <img href="">
-            <figcaption></figcaption>
+                <img src="images/trespraias.webp" width="200" alt="Tres Praias, guarapari, ES, Brazil">
+                <figcaption>Tres Praias, Guarapari, ES - Brazil </figcaption>
             </figure>
         </section>
-        <section>
+        <section class="certificates">
             <h2>Web and Programming Certificate </h2>
-        <div>
+            <div class="program">
+                <ul>
+                    <li>All</li>
+                    <li>CSE</li>
+                    <li>WDD</li>
+                </ul>
+            </div>
+            <div class="courses">
             <ul>
-                <li>All</li>
-                <li>CSE</li>
-                <li>WDD</li>
+                <li>CSE 110</li>
+                <li>WDD 130</li>
+                <li>CSE 111</li>
+                <li>CSE 210</li>
+                <li>WDD 131</li>
+                <li>WDD 231</li>
             </ul>
         </div>
-                <ul>
-                    <li>CSE 110</li>
-                    <li>WDD 130</li>
-                    <li>CSE 111</li>
-                    <li>CSE 210</li>
-                    <li>WDD 131</li>
-                    <li>WDD 231</li>
-                </ul>
         </section>
     </main>
-    <footer><p>©<span id="currentyear"></span> 🌤️ Cesar Jose de Oliveira 🌤️ Brazil </p>
-    <p> last update: <span id="lastModified"></span></p>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌤️ Cesar Jose de Oliveira 🌤️ Brazil </p>
+        <p> last update: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
