@@ -198,7 +198,6 @@ section{
     text-decoration: none;
     color: white;
     padding: 10px 15px;
-    display: block;
     border: 1px solid hsla(312, 100%, 2%, 0.41);
     border-radius: 5px;
     font-size: 1.5em;
@@ -242,3 +241,10 @@ footer {
 #navigation.show{
     display: block;
 }
+
+.hidden {
+    display: none;
+}
+  .visible {
+    display: block;
+  }
