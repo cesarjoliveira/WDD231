@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
     <meta name="description" content="Timbuktu Chamber of Commerce directory page">
     <meta name="author" content="Cesar Olivera">
@@ -49,6 +49,15 @@
                 <h2 class="home">Home</h2>
             <div class="events">
                 <h2 id="eventsh2">Events</h2>
+                <ul>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                    <li> </li>
+                </ul>
             </div>
             <div class="current-weather">
                 <h2 id="weatherch2">Current Weather</h2>
@@ -72,44 +81,16 @@
                 </ul>
             </div>
         </section>
+        <div class="buttonsholder">
+        <button id="grid">Grid 📱</button>
+        <button id="list">List 📄</button>
+        
+        </div>
+    <article class="grid">
         <section class="business-section">
-            <div class="business-header">
-            <div class="business-nametag">
-                <h2> Business name</h2>
-                <h3> Business Tag Line</h3>
-            </div>
-            <img src="images/business.webp" alt="Business logo">
-                <ul>
-                    <li>EMAIL: info@gmail.com</li>
-                    <li>Phone: 800-555-1234</li>
-                    <li>URL: mybusiness.com</li>
-                </ul>
-            </div>
-            <div class="business-header">
-                <div class="business-nametag">
-                    <h2> Business name</h2>
-                    <h3> Business Tag Line</h3>
-                </div>
-                <img src="images/business.webp" alt="Business logo">
-                    <ul>
-                        <li>EMAIL: info@gmail.com</li>
-                        <li>Phone: 800-555-1234</li>
-                        <li>URL: mybusiness.com</li>
-                    </ul>
-                </div>
-                <div class="business-header">
-                    <div class="business-nametag">
-                        <h2> Business name</h2>
-                        <h3> Business Tag Line</h3>
-                    </div>
-                    <img src="images/business.webp" alt="Business logo">
-                        <ul>
-                            <li>EMAIL: info@gmail.com</li>
-                            <li>Phone: 800-555-1234</li>
-                            <li>URL: mybusiness.com</li>
-                        </ul>
-                    </div>
+
         </section>
+    </article>
     </main>
     <footer>
         <div>
@@ -130,8 +111,8 @@
             <ul>
             <li>WDD231 Class Project</li>
             <li>Cesar Oliveira</li>
-            <li>© 20xx Timbuktu Chamber of Commerce</li>
-            <li>Last Modification: 10/21/202x 22:12:35</li>
+            <li>© <span class="currentyear"></span> Timbuktu Chamber of Commerce</li>
+            <li>Last Modification: <span class="lastModified"></span></li>
             </ul>
         </div>
     </footer>
