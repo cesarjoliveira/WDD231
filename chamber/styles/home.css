@@ -115,6 +115,7 @@ header nav ul :hover {
     display: inline-block;
     font: normal bold 26px/1 "Open Sans", sans-serif;
     text-align: center;
+    max-width: 100%;
     display: block;
     position: absolute;
     left: 78%;
