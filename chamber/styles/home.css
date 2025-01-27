@@ -103,7 +103,8 @@ header nav ul :hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 10% 10%
+    object-position: 10% 10%;
+    position: relative;
 }
 
 #join {
