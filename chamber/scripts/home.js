@@ -1,3 +1,4 @@
+const apiKey = 'd722aff014f8242590e9a5e0aa62cb7f';
 async function loadMembers() {
     try {
         // Fetch data from the JSON file
@@ -111,8 +112,6 @@ function getDayOfWeek(unixTimestamp, timezoneOffset = 0) {
   
   // Exemplo de uso
 
-const apiKey = process.env.API_KEY;
-
 async function loadcurrentweather() {
     try {
         // Fetch data from the JSON file
@@ -160,7 +159,7 @@ loadcurrentweather();
 async function loadforecastweather() {
     try {
         // Fetch data from the JSON file
-        const response = await fetch("https://pro.openweathermap.org/data/2.5/forecast/daily?lat=44.34&lon=10.99&cnt=3&appid=d722aff014f8242590e9a5e0aa62cb7f&units=imperial");
+        const response = await fetch(`https://pro.openweathermap.org/data/2.5/forecast/daily?lat=44.34&lon=10.99&cnt=3&appid=${apiKey}&units=imperial`);
         if (!response.ok) throw new Error('Failed to fetch data.');
     
         const forecasts = await response.json();
