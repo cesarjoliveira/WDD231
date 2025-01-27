@@ -111,12 +111,12 @@ function getDayOfWeek(unixTimestamp, timezoneOffset = 0) {
   
   // Exemplo de uso
 
-  
+const apiKey = process.env.API_KEY;
 
 async function loadcurrentweather() {
     try {
         // Fetch data from the JSON file
-        const response = await fetch("https://pro.openweathermap.org/data/2.5/weather?q=London,uk&APPID={VAR_API_KEY_WEATHER}&units=imperial");
+        const response = await fetch(`https://pro.openweathermap.org/data/2.5/weather?q=London,uk&APPID=${apiKey}&units=imperial`);
         if (!response.ok) throw new Error('Failed to fetch data.');
     
         const weathers = await response.json();
