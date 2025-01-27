@@ -90,13 +90,14 @@ header nav ul :hover {
 .herodiv {
     display: flex;
     width: 80%;
-    height: 300px;
     justify-content: center;
     margin: 0;
     padding: 0 10% 0% 10%;
     overflow: hidden;
-    overflow-wrap: normal;
     clear: left;
+    aspect-ratio: 8 / 2 ;
+    overflow: hidden;
+    position: relative;
 }
 
 .herodiv img {
@@ -104,22 +105,21 @@ header nav ul :hover {
     height: 100%;
     object-fit: cover;
     object-position: 10% 10%;
-    position: relative;
 }
 
 #join {
     background: #93c47d;
-    border-radius: 11px;
-    box-shadow: 4px 4px #274e13;
-    padding: 20px 45px;
+    border-radius: 1em;
+    box-shadow: 1% 1% 2% rgba(39, 78, 19, 0.5);
+    padding: 1em 1em;
     color: #ffffff;
     display: inline-block;
     font: normal bold 26px/1 "Open Sans", sans-serif;
     text-align: center;
     display: block;
     position: absolute;
-    right: 12%;
-    top: 32%;
+    bottom: 10%;
+    right: 15%;
 }
 
 .middle-section {
@@ -383,15 +383,64 @@ footer img {
 
 .list section img {
     display: none;
-    /* smaller viewports only */
+    
 }
 
 .list section h3 {
     font-size: 1rem;
     font-family: Roboto, Helvetica, sans-serif;
 }
+#menu::before {
+	content: "≡";
+}
 
+#menu.show::before {
+	content: "X";
+}
+
+#menu {
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--sec-bg-color);
+	color: var(--sec-text-color);
+    align-content: center;
+    width: 6%;
+}
+#navigation.show{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+@media (min-width: 769px) {
+    #menu {
+        display: none;
+    }
+}
 @media (min-width: 320px)and (max-width: 768px) {
+    #menu {
+        display: block;
+    }
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        color: var(--sec-text-color);
+        width: 10%;
+        height: 3%;
+        position: sticky;
+        bottom: 0%;
+        align-self: self-start;
+
+    }
     header {
         display: grid;
         grid-template-columns: 30% 70%;
@@ -417,8 +466,12 @@ footer img {
         padding-top: 15%;
     }
 
-    header nav {
-        display: none;
+    header #navigation.show {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        padding-top: 25%;
+        left: 60%;
+        font-size: small;
     }
 
     .herodiv {
@@ -429,7 +482,6 @@ footer img {
         margin: 0;
         padding: 0;
         overflow: hidden;
-        overflow-wrap: normal;
         clear: left;
     }
 
@@ -458,7 +510,6 @@ footer img {
         flex-direction: column;
     }
     #join{
-        right: 5%;
-        top: 45%;
+        padding: 0.25em 0.25em
     }
 }

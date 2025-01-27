@@ -71,3 +71,11 @@ lastModified.innerHTML = `<span class=" lastModified"> ${new Intl.DateTimeFormat
 ).format(today)}</span>`;
 
 currentyear.innerHTML = `<span class=" currentyear"> ${today.getFullYear()}</span>`;
+
+const nav = document.querySelector('#navigation')
+const button = document.querySelector('#menu');
+
+button.addEventListener('click', () => {
+	nav.classList.toggle('show');
+	button.classList.toggle('show');
+});
