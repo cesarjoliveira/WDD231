@@ -244,7 +244,7 @@ header nav ul :hover {
 }
 
 .buttonsholder {
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 10px;
     padding-bottom: 1%;
