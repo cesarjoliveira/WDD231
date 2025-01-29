@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Cesar Oliveira Chamber Home Page</title>
+    <link href="styles/join.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" >
+    <meta name="description" content="Timbuktu Chamber of Commerce home page">
+    <meta name="author" content="Cesar Olivera">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cesarjoliveira.github.io/wdd231/chamber/directory.html" >
+    <meta property="og:title" content="WDD231 - Cesar Oliveira Timbuktu  Chamber home page" >
+    <meta property="og:image" content="https://cesarjoliveira.github.io/wdd231/images/trespraias.webp" >
+    <meta property="og:description" content="Timbuktu Chamber of Commerce home page" >
+
+</head>
+
+<body>
+    <header>
+        <img src="images/timbuktu-logo.webp" alt="Timbuktu Chamber of Commerce logo">
+        <div class="divlogoh1">
+            <h1>Timbuktu</h1>
+        </div>
+        <div class="divlogoh2">
+            <h3>Chamber of Commerce</h3>
+            <a id="menu" href="#"></a>
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discovery.html">Discovery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="herodiv">
+            <img src="images/hero.webp" alt="Timbuktu Chamber of Commerce hero image">  
+            <button id="join">Join Us</button>
+        </div>
+        
+        <section class="middle-section">
+        <form>
+            
+        <label for="first-name">First Name:</label>
+        <label for="first-name-input"><input type="text" id="first-name" name="first-name" required autocomplete="name"></label>
+
+        <label for="last-name">Last Name:</label>
+        <label for="last-name-input"><input type="text" id="last-name" name="last-name" required autocomplete="family-name"></label>
+
+        <label for="organization-title">Organization Title:</label>
+        <label for="organization-title-input"><input type="text" id="organization-title" name="organization-title" required></label>
+
+        <label for="email">Email:</label>
+        <label for="email-input"><input type="email" id="email" name="email" required autocomplete="email"></label>
+
+        <label for="phone">Phone:</label>
+        <label for="phone-input"><input type="tel" id="phone" name="phone" required autocomplete="mobile"></label>
+
+        <label for="organization-name">Organization Name:</label>
+        <label for="organization-name-input"><input type="text" id="organization-name" name="organization-name" required autocomplete="organization"></label>
+
+        <label for="membership-level">Membership Level:</label>
+        <label for="membership-level-select"><select id="membership-level" name="membership-level" required>
+            <option value="non-profit">Non Profit</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+        </select></label>
+
+        <label for="organization-description">Organization Description:</label>
+        <label for="organization-description-input"></label><textarea id="organization-description" name="organization-description" required></textarea></label>
+        <label for="timestamp-label" type="hidden" id="hidden-timestamp" class="timestamp-form"> </label>
+        <label for="button-submit"><button type="submit">Submit</button></label>
+        </form>
+        <article>
+            <h3>membership level</h3>
+        <div class="modal-membership">
+            <p>Non-Profit</p>
+            <button class="open-dialog" data-modal="modal1">Learn More</button>  
+            
+                <dialog id="modal1">
+                  <h2>Non-Profit</h2>
+                  <p>Este é um modal usando o elemento .</p>
+                  <button class="close-dialog">Fechar</button>
+                </dialog>    
+        </div>
+        <div class="modal-membership">
+            <p>Bronze Membership</p>
+            <button class="open-dialog" data-modal="modal2">Learn More</button>
+            <dialog id="modal2">
+                <h2>Non-Profit</h2>
+                <p>Este é um modal usando o elemento .</p>
+                <button class="close-dialog">Fechar</button>
+              </dialog>          
+        </div>
+        <div class="modal-membership">
+            <p>Silver Membership</p>
+            <button class="open-dialog" data-modal="modal3">Learn More</button>
+             <dialog id="modal3">
+                  <h2>Non-Profit</h2>
+                  <p>Este é um modal usando o elemento.</p>
+                  <button class="close-dialog">Fechar</button>
+                </dialog>       
+        </div>
+        <div class="modal-membership">
+            <p>Gold Membership</p>
+            <button class="open-dialog" data-modal="modal4">Learn More</button>
+            <dialog id="modal4">
+                <h2>Non-Profit</h2>
+                <p>Este é um modal usando o elemento .</p>
+                <button class="close-dialog">Fechar</button>
+              </dialog>   
+        </div>
+    </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <ul>
+            <li>Timbuktu Chamber of Commerce</li>
+            <li>10 Rue De La Paix</li>
+            <li>Timbuktu, Mali 999</li>
+            <li>info@timbuktucc.org</li>
+            <li>800-555-2300</li>
+            </ul>
+        </div>
+        <div class="social">
+            <img src="images/facebook.webp" alt="Facebook logo">
+            <img src="images/twitter.webp" alt="Twitter logo">
+            <img src="images/linkedin.webp" alt="Instagram logo">
+        </div>
+        <div>
+            <ul>
+            <li>WDD231 Class Project</li>
+            <li>Cesar Oliveira</li>
+            <li>© <span class="currentyear"></span> Timbuktu Chamber of Commerce</li>
+            <li>Last Modification: <span class="lastModified"></span></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
