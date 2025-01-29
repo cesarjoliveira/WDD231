@@ -10,13 +10,13 @@ lastModified.innerHTML = `<span class=" lastModified"> ${new Intl.DateTimeFormat
     }
 ).format(today)}</span>`;
 
-formtimestamp.innerHTML = `<span class="timestamp-form"> ${new Intl.DateTimeFormat(
+formtimestamp.innerHTML = `<input type="hidden" class="timestamp-form" value="${new Intl.DateTimeFormat(
   "en-US",
   {
       dateStyle: "short",
       timeStyle: "short"
   }
-).format(today)}</span>`;
+).format(today)}"> `;
 
 currentyear.innerHTML = `<span class=" currentyear"> ${today.getFullYear()}</span>`;
 
