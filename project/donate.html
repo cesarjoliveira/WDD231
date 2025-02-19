@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hope for Kids - Home</title>
+    <title>Hope for Kids - Donate</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/donate.js"></script>
 </head>
 <body>
     <header>
@@ -21,10 +22,13 @@
     </nav>
     
     <section>
-        <h2>Welcome to Hope for Kids</h2>
-        <p>We are a non-profit organization dedicated to improving the lives of underprivileged children through education, healthcare, and community programs.</p>
-        <p>Join us in making a difference today!</p>
-        <button onclick="location.href='donate.html'">Donate Now</button>
+        <h2>Donate</h2>
+        <p>Your support helps us provide education, healthcare, and essential resources to children in need.</p>
+        <label for="donationAmount">Enter donation amount: </label>
+        <input type="number" id="donationAmount" min="1" placeholder="$10">
+        <button onclick="addDonation()">Donate Now</button>
+        
+        <h3>Total Donations: <span id="totalDonations">$0</span></h3>
     </section>
     
     <footer>
