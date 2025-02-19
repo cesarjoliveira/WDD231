@@ -1,0 +1,225 @@
+:root {
+    --main-bg-color: #0640dfe8;
+    --sec-bg-color: #1100f8;
+    --main-text-color: #0a0303;
+    --sec-text-color: #f8f8f8;
+    --main-accent-color: #0640df;
+    --main-accent-color-light: #73797e;
+    --main-accent-color-hover: #96db26;
+    --main-accent-color-dark: #3f3f3f;
+    --social-bg-color: #cdd3e4e8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+}
+
+header {
+    background-color: var(--main-bg-color);
+    display: grid;
+    justify-content: left;
+    grid-template-columns: 4% 43% 43%;
+    grid-template-rows: 30px 1fr;
+    color: var(--sec-text-color);
+}
+
+.divlogoh1 {
+    margin: 0;
+    padding: 0;
+    grid-column: 2;
+    grid-row: 1; 
+}
+
+.divlogoh2 {
+    margin: 0;
+    padding: 0;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+header nav {
+    margin: 0;
+    padding: 0;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+header nav ul li {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--sec-text-color);
+    font-size: 1.2em;
+    height: 100%;
+}
+
+header nav ul :hover {
+    color: var(--main-accent-color-hover);
+    background-color: var(--sec-bg-color);
+}
+
+section {
+    display: grid;
+}
+footer {
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin: 0;
+    padding: 0 5% 0 5%;
+    text-align: left;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.social {
+    background-color: var(--social-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.social img {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-accent-color-light);
+}
+
+.list div:nth-child(even) {
+    background-color: var(--main-accent-color-dark);
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list div>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+#menu {
+    font-size: 2rem;
+    font-weight:700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--sec-bg-color);
+    color: var(--sec-text-color);
+    align-content: center;
+    width: 6%;
+    display: none;
+}
+
+#navigation.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+@media (max-width: 640px) {
+    #menu {
+        display: block;
+    }
+}
+@media (min-width: 641px) {
+    .cards-container {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .card img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover img {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (min-width: 1025px) {
+    .cards-container {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+}

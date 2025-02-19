@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Item 1",
+      "address": "123 Main Street, Timbuktu",
+      "description": "A beautiful spot to visit with stunning views.",
+      "image": "images/item1.webp"
+    },
+    {
+      "name": "Item 2",
+      "address": "456 Second Ave, Timbuktu",
+      "description": "A historic landmark with rich cultural significance.",
+      "image": "images/item2.webp"
+    },
+    {
+      "name": "Item 3",
+      "address": "789 Third Rd, Timbuktu",
+      "description": "A scenic park with many activities for families.",
+      "image": "images/item3.webp"
+    },
+    {
+      "name": "Item 4",
+      "address": "101 Fourth Blvd, Timbuktu",
+      "description": "A popular spot for hiking and nature walks.",
+      "image": "images/item4.webp"
+    },
+    {
+      "name": "Item 5",
+      "address": "202 Fifth Street, Timbuktu",
+      "description": "A lovely beach perfect for a day out.",
+      "image": "images/item5.webp"
+    },
+    {
+      "name": "Item 6",
+      "address": "303 Sixth Rd, Timbuktu",
+      "description": "A museum showcasing local history and art.",
+      "image": "images/item6.webp"
+    },
+    {
+      "name": "Item 7",
+      "address": "404 Seventh Ave, Timbuktu",
+      "description": "A peaceful garden with a wide variety of plants.",
+      "image": "images/item7.webp"
+    },
+    {
+      "name": "Item 8",
+      "address": "505 Eighth Blvd, Timbuktu",
+      "description": "A shopping center with unique stores and cafes.",
+      "image": "images/item8.webp"
+    }
+  ]
+  
